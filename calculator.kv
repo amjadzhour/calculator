@@ -1,0 +1,141 @@
+<Button>
+    size_hint:(0.6,0.6)
+    background_color:(77/255, 204/255, 203/255, 0.9)
+
+<Label>
+    canvas.before:
+        Color:
+            rgba:(77/255, 204/255, 203/255, 0.9)
+        Rectangle:
+            size:self.size
+            pos:self.pos    
+    font_size:30
+    size_hint_y:0.5
+
+   
+    
+
+<calculator1>
+    canvas.before:
+        Color:
+            rgba:(70/255,106/255,145/255,0.8)
+        Rectangle:
+            size:self.size
+            pos:self.pos
+
+
+    GridLayout:
+        sapcing:5
+        padding:10
+        height:10
+        cols:1
+        size:root.width,root.height
+        Label:
+            text:""
+            id:text1
+
+        GridLayout:
+            cols:4
+            spacing:5
+            padding_top:10
+            Button:
+                text:"AC"
+                id:AC
+                on_press:root.AC()
+
+            Button:
+                text:"C"
+                id:C
+                on_press:root.C()   
+
+            Button:
+                text:"%"
+                id:five
+                on_press:root.five()
+
+            Button:
+                text:"/"
+                id:numu
+                on_press:root.numU()
+
+            Button:
+                text:"7"
+                id:num7
+                on_press:root.num7()
+
+            Button:
+                text:"8"
+                id:num8
+                on_press:root.num7() 
+
+            Button:
+                text:"9"
+                id:num9
+                on_press:root.num9()    
+
+            Button:
+                text:"X"
+                id:x
+                on_press:root.x5()         
+
+            Button:
+                text:"4"
+                id:num4
+                on_press:root.num4() 
+
+            Button:
+                text:"5"
+                id:num5
+                on_press:root.num5() 
+
+            Button:
+                text:"6"
+                id:num6
+                on_press:root.num6() 
+
+            Button:
+                text:"-"
+                id:num-
+                on_press:root.numy()  
+
+            Button:
+                text:"1"
+                id:num1
+                on_press:root.num1()    
+
+            Button:
+                text:"2"
+                id:num2
+                on_press:root.num2()        
+
+            Button:
+                text:"3"
+                id:num3
+                on_press:root.num3() 
+
+            Button:
+                text:"+"
+                id:plus
+                on_press:root.plus() 
+               
+
+            Button:
+                text:"."
+                id:num
+                on_press:root.num_dout()   
+
+            Button:
+                text:"0"
+                id:num0
+                on_press:root.num0() 
+
+            Button:
+                text:"="
+                id:num_equal
+                on_press:root.num_equal()  
+
+            Button:
+                text:"!"
+                on_press:root.factoral1()                  
+
+
